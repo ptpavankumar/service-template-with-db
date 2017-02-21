@@ -4,7 +4,7 @@
   "description": "service template to create api(s) ",
   "main": "index.js",
   "scripts": {
-    "sqllitecrud": "babel-node src/index.js example/sqllitecrud",
+    "dev": "babel-node src/index.js",
     "lint": "eslint src",
     "build": "babel -d lib src",
     "prepublish": "npm run lint && npm run build"

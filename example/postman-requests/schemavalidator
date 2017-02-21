@@ -1,0 +1,19 @@
+GET /user HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+
+---------------------------------------------------------------------
+
+GET /user/17 HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+
+---------------------------------------------------------------------
+
+POST /user/10 HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+
+{ "name": "Kalyan", "dob": "01/04/1982", "email": "kalyan@me.com", "sex": "male" }
+
+---------------------------------------------------------------------
