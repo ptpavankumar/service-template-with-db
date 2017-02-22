@@ -1,9 +1,9 @@
 const message = 'Object does not match input schema';
 
 class ValidationError extends Error {
-  contructor(errors) {
+  constructor(errors) {
+    super(message);
     this.errors = errors;
-    this.message = message;
   }
 }
 

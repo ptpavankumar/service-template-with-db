@@ -1,7 +1,5 @@
-const knex = require('../repositories/knex');
-const userDTO = require('../models/userDTO');
-const errorTypes = require('../utils/errortypes');
-const ValidationError = require('../utils/validationerror');
+const knex = require('../ioc/knex');
+const { userDTO, errorTypes, ValidationError } = require('../models');
 
 const create = (user) => {
   const validationInfo = userDTO.validate(user);
