@@ -1,13 +1,41 @@
+# Sample Service Template With Database (sqlite)
+
+## Setup microservice
+
+```
+npm install
+```
+
+## Setup database
+
+```
+npm run dbupgrade
+```
+
+## Run in development mode
+
+```
+npm run dev
+```
+
+## Publish to public/private registry (NOTE: before publish prepublish will lint and build a package)
+
+```
+npm publish
+```
+
+# Database migrations
+
 NOTE: Never place any file that in migrations folder that should not be executed
 
-// Database setup commands
+## Database setup commands
 
-// Setup initial migration folder with default db-upgrade script
+### Generate upgrade/downgrade scripts for *20170223144325_initial.js* for database based on dbcongif.js
 ```
-knex migration:make initial --env development --knexfile src/dbcongif.js
+knex migrate:make initial --env development --knexfile ./src/config/dbconfig.js
 ```
 
-// Apply the upgrade scripts into sqlite
+### Apply this command to create/upgrade sqlite
 ```
-knex migration:latest --env development --knexfile src/dbcongif.js
+knex migrate:latest --env development --knexfile ./src/config/dbconfig.js
 ```

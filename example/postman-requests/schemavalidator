@@ -10,7 +10,7 @@ Content-Type: application/json
 
 ---------------------------------------------------------------------
 
-POST /user/10 HTTP/1.1
+POST /user HTTP/1.1
 Host: localhost:3000
 Content-Type: application/json
 

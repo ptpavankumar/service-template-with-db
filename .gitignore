@@ -6,3 +6,5 @@
 
 node_modules
 lib
+npm-debug.log
+src/appdata/dev.sqlite3

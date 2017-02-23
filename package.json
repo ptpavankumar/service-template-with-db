@@ -4,6 +4,7 @@
   "description": "service template to create api(s) ",
   "main": "index.js",
   "scripts": {
+    "dbupgrade": ". src/config/dbsetup.sh",
     "dev": "babel-node src/index.js",
     "lint": "eslint src",
     "build": "babel -d lib src",
@@ -29,6 +30,7 @@
     "express": "^4.14.0",
     "joi": "^10.2.2",
     "knex": "^0.12.6",
+    "lodash": "^4.17.4",
     "sqlite3": "^3.1.8"
   }
 }
